@@ -1,4 +1,3 @@
-//2023111359 √÷∞°¿±
 #include <iostream>
 using namespace std;
 
@@ -28,7 +27,7 @@ public:
 class Rectangle : public Shape {
 private:
 public:
-    Rectangle() :Shape(0.0, 0.0) {}
+    Rectangle() :Shape() { height = 0; width = 0; }
     Rectangle(double h, double w) :Shape(h, w) {}
     double getArea() {
         return getHeight() * getWidth();
@@ -49,8 +48,8 @@ int main() {
     Rectangle r(5, 2);
     Triangle t(3, 5);
 
-    cout << "Rectangle(5,2)¿« ∏È¿˚ : " << r.getArea() << endl;
-    cout << " Triangle(3,5)¿« ∏È¿˚ : " << t.getArea() << endl;
+    cout << "Rectangle(5,2)Ïùò Î©¥Ï†Å : " << r.getArea() << endl;
+    cout << " Triangle(3,5)Ïùò Î©¥Ï†Å : " << t.getArea() << endl;
 
     return 0;
 }
